@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.navigation-bar {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: white;
+}
+.show__sidebar {
+  display: block;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  padding-top: 20px;
+  background-color: lightgray;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  border-color: #065fd4;
+  box-shadow: none;
+}
+/* sidebar */
+.sidebar {
+  width: 256px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 50px;
+  background-color: #fff;
+  overflow-y: scroll;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  display: block;
+  transition: width 0.35s ease-in-out;
+}
+.show__sidebar {
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  display: block;
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  padding-top: 20px;
+  background-color: lightgray;
+  display: none;
+}
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+/* chip */
+.chip-container {
+  background-color: #fff;
+  height: 56px;
+  padding: 8px 0;
+  position: sticky;
+  top: 49px;
+  z-index: 99;
+}
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  white-space: nowrap;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.chip-active {
+  background-color: #000;
+  color: #fff;
+}
+.slick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.slick-arrow {
+  font-size: 10px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+/* navigation */
+.nav-item {
+  padding: 0 20px;
+}
+.nav-link span {
+  padding: 0 16px;
+  font-size: 15px;
+}
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-link-title span {
+  padding: 0 16px;
+  font-size: 15px;
+}
+.nav-footer {
+  padding-left: 1rem;
+}
+.nav-footer .nav-link {
+  padding: 0;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.nav-item-custom {
+  padding: 0 12px;
+}
+.page-content {
+  margin-left: 256px;
+  position: relative;
+}
+.title-video {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f0f0f;
+  height: 2rem;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.name-channel {
+  font-size: 12px;
+  color: #606060;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+.name-channel:hover {
+  color: #000;
+}
+.description-video {
+  font-size: 16px;
+  color: #606060;
+}
+@media (max-width: 800px) {
+  .nav {
+    justify-content: end;
+  }
+}
